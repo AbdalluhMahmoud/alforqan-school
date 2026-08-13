@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخاتمين - مدرسة الفرقان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8rem 0 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .page-header h1 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .year-section {
+            margin-bottom: 4rem;
+        }
+        .year-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        .year-title::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(to left, var(--secondary-color), transparent);
+        }
+        .names-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .name-card {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-right: 4px solid var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: var(--transition);
+        }
+        .name-card:hover {
+            transform: translateX(-5px);
+            border-right-color: var(--primary-color);
+        }
+        .name-card .number {
+            background: var(--light-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            min-width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 1.1rem;
+        }
+        /* تنسيق الاسم والوظيفة الجديد */
+        .name-card .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .name-card .name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+        .name-card .job {
+            font-size: 0.9rem;
+            color: #7f8c8d; /* لون رمادي هادئ للوظيفة */
+            margin-top: 3px;
+        }
+        .name-card .job i {
+            margin-left: 5px;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body style="background-color: var(--light-color);">
+
+    <!-- الهيدر -->
+    <header id="header" class="scrolled">
+        <div class="container header-container">
+            <div class="logo"><i class="fas fa-mosque logo-icon"></i><h1>مدرسة <span>الفرقان</span></h1></div>
+            <button class="mobile-menu-btn" onclick="document.querySelector('nav ul').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="overview.html">لمحة من الواقع</a></li>
+                    <li><a href="teachers.html">المعلمون</a></li>
+                    
+                    <li><a href="competitions.html">مسابقات</a></li>
+                    <li><a href="khatmeen.html" style="color: var(--secondary-color);">الخاتمين</a></li>
+                    <li><a href="register.html">التسجيل</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- عنوان الصفحة -->
+    <div class="page-header">
+        <div class="container fade-in">
+            <h1>لوحة الشرف والخاتمين</h1>
+            <p>أسماء المتمين لحفظ القرءان الكريم بالمكتب بداية من 2008 وحتي الان. نسأل الله أن يبارك فيهم ويجعلهم قرة عين لأهلهم وللأمة الإسلامية.</p>
+        </div>
+    </div>
+
+    <!-- قائمة الأسماء -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+
+            <!-- 2008 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2008</h2>
+                <div class="names-grid">
+                    <div class="name-card">
+                        <div class="number">1</div>
+                        <div class="info">
+                            <div class="name">يوسف شعبان حامد</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> إمام وخطيب بوزارة الأوقاف بدولة الإمارات</div>
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <div class="number">2</div>
+                        <div class="info">
+                            <div class="name">هشام عبدالصبور نوح حسانين</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> إمام علي بند التحسين بوزارة الأوقاف المصرية</div>
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <div class="number">3</div>
+                        <div class="info"><div class="name">نجم الدين رمضان محمد حامد</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2009 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2009</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">4</div><div class="info"><div class="name">احمد اشرف عبده فؤاد</div></div></div>
+                    <div class="name-card"><div class="number">5</div><div class="info"><div class="name">محمد خلف جابر</div></div></div>
+                    <div class="name-card">
+                        <div class="number">6</div>
+                        <div class="info">
+                            <div class="name">عبدالراضي جمال عبدالراضي</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> إمام وخطيب ومدرس بوزارة الأوقاف المصرية</div>
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <div class="number">7</div>
+                        <div class="info">
+                            <div class="name">حسين أبو بكر حسن</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> مدرس ومحفظ قرآن بالأزهر الشريف</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">8</div><div class="info"><div class="name">ساره عسران صادق عسران</div></div></div>
+                    <div class="name-card"><div class="number">9</div><div class="info"><div class="name">ابتسام هارون عبد الحميد</div></div></div>
+                    <div class="name-card"><div class="number">10</div><div class="info"><div class="name">سهام محمد عبد اللاه محمد</div></div></div>
+                </div>
+            </div>
+
+            <!-- 2010 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2010</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">11</div><div class="info"><div class="name">محمد عبده محمود أحمد أبو بكر</div></div></div>
+                    <div class="name-card"><div class="number">12</div><div class="info"><div class="name">طاهر فوزي محمد جمعه</div></div></div>
+                    <div class="name-card">
+                        <div class="number">13</div>
+                        <div class="info">
+                            <div class="name">حمزه محمد جمال الدين رضوان</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> محامي حر</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">14</div><div class="info"><div class="name">حسام حسن عثمان</div></div></div>
+                    <div class="name-card"><div class="number">15</div><div class="info"><div class="name">عبد الكريم محمد مكي</div></div></div>
+                </div>
+            </div>
+
+            <!-- 2011 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2011</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">16</div><div class="info"><div class="name">اسلام احمد اسماعيل ابو بكر</div></div></div>
+                    <div class="name-card"><div class="number">17</div><div class="info"><div class="name">اسماء عبد البصير علي السيد</div></div></div>
+                    <div class="name-card"><div class="number">18</div><div class="info"><div class="name">ولاء أحمد أبو المجد</div></div></div>
+                    <div class="name-card"><div class="number">19</div><div class="info"><div class="name">احمد عدلي رشيد</div></div></div>
+                    <div class="name-card"><div class="number">20</div><div class="info"><div class="name">منتصر عبدة محمود</div></div></div>
+                </div>
+            </div>
+
+            <!-- 2012 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2012</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">21</div><div class="info"><div class="name">وسيم بحر بهيج</div></div></div>
+                    <div class="name-card"><div class="number">22</div><div class="info"><div class="name">كريم ثروت فتحي</div></div></div>
+                    <div class="name-card">
+                        <div class="number">23</div>
+                        <div class="info">
+                            <div class="name">محمد فرج فايز</div>
+                            <div class="job"><i class="fas fa-dove"></i> رحمه الله</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">24</div><div class="info"><div class="name">محمد عبدالنعيم عناني</div></div></div>
+                    <div class="name-card"><div class="number">25</div><div class="info"><div class="name">محمد فاروق مصطفى</div></div></div>
+                    <div class="name-card">
+                        <div class="number">26</div>
+                        <div class="info">
+                            <div class="name">أحمد عبد اللطيف صلاح</div>
+                            <div class="job"><i class="fas fa-user-md"></i> طبيب بشري</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">27</div><div class="info"><div class="name">سمير خليفه عبد الله</div></div></div>
+                    <div class="name-card"><div class="number">28</div><div class="info"><div class="name">أمين عبدالبصير علي السيد</div></div></div>
+                </div>
+            </div>
+
+            <!-- 2013 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2013</h2>
+                <div class="names-grid">
+                    <div class="name-card">
+                        <div class="number">29</div>
+                        <div class="info">
+                            <div class="name">محمد عبد الرحيم طبش</div>
+                            <div class="job"><i class="fas fa-user-md"></i> طبيب بشري</div>
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <div class="number">30</div>
+                        <div class="info">
+                            <div class="name">محمد عاطف سلامة</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> محامي حر</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">31</div><div class="info"><div class="name">حليمه حمدي حسن</div></div></div>
+                    <div class="name-card">
+                        <div class="number">32</div>
+                        <div class="info">
+                            <div class="name">اسلام احمد عبد الله</div>
+                            <div class="job"><i class="fas fa-graduation-cap"></i> معيد بهندسة الأكاديمية البحرية</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">33</div><div class="info"><div class="name">اسلام أنور أبو بكر</div></div></div>
+                    <div class="name-card">
+                        <div class="number">34</div>
+                        <div class="info">
+                            <div class="name">اسلام فتحي عبدالعزيز</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> خطيب مكافأة علي بند التحسين</div>
+                        </div>
+                    </div>
+                    <div class="name-card">
+                        <div class="number">35</div>
+                        <div class="info">
+                            <div class="name">مصطفى كامل محمد مكي</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> محامي بدولة الكويت</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">36</div><div class="info"><div class="name">علاء عارف محمد مكي</div></div></div>
+                    <div class="name-card">
+                        <div class="number">37</div>
+                        <div class="info">
+                            <div class="name">منة الله اشرف عبده فؤاد</div>
+                            <div class="job"><i class="fas fa-user-md"></i> طبيب بشري</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">38</div><div class="info"><div class="name">خلود محمود احمد</div></div></div>
+                    <div class="name-card">
+                        <div class="number">39</div>
+                        <div class="info">
+                            <div class="name">شيماء اشرف عبدة فؤاد</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> طبيب علاج طبيعي</div>
+                        </div>
+                    </div>
+            
+                    <div class="name-card">
+                        <div class="number">40</div>
+                        <div class="info">
+                            <div class="name">نبيل بيومي عبد اللطيف عبدالعال</div>
+                            <div class="job"><i class="fas fa-briefcase"></i> محامي حر</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2014 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2014</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">41</div><div class="info"><div class="name">عبدالرحيم عربي عبدالرحيم</div></div></div>
+                    <div class="name-card"><div class="number">42</div><div class="info"><div class="name">محمد أحمد حافظ حسانين</div></div></div>
+                    <div class="name-card"><div class="number">43</div><div class="info"><div class="name">احمد محمد عبد الرسول</div></div></div>
+                </div>
+            </div>
+
+            <!-- 2015 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعة 2015</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">44</div><div class="info"><div class="name">محمد احمد محمد احمد دوحة</div></div></div>
+                    <div class="name-card"><div class="number">45</div><div class="info"><div class="name">احمد حاتم محمد احمد دوحة</div></div></div>
+                    <div class="name-card"><div class="number">46</div><div class="info"><div class="name">احمد محمد عبد الرازق كعل</div></div></div>
+                    <div class="name-card"><div class="number">47</div><div class="info"><div class="name">نسمه فوزي محمد جمعه</div></div></div>
+                </div>
+            </div>
+
+            <!-- 2016 - 2018 -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعات (2016 - 2017 - 2018)</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">48</div><div class="info"><div class="name">مروه عبد الحميد إمام</div></div></div>
+                    <div class="name-card"><div class="number">49</div><div class="info"><div class="name">محمد أحمد الصاوي</div></div></div>
+                    <div class="name-card"><div class="number">50</div><div class="info"><div class="name">انتصار لايق عبد الرازق</div></div></div>
+                    <div class="name-card"><div class="number">51</div><div class="info"><div class="name">آيه عارف محمد مكي</div></div></div>
+                    <div class="name-card"><div class="number">52</div><div class="info"><div class="name">اسماء عارف محمد مكي</div></div></div>
+                    <div class="name-card">
+                        <div class="number">53</div>
+                        <div class="info">
+                            <div class="name">عبد الله محمود عبد الله</div>
+                            <div class="job"><i class="fas fa-laptop-code"></i> AI Engineer</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">54</div><div class="info"><div class="name">اسماء محمد عبد الله</div></div></div>
+                    <div class="name-card"><div class="number">55</div><div class="info"><div class="name">ابتسام خليفه عبد الله</div></div></div>
+                    <div class="name-card"><div class="number">56</div><div class="info"><div class="name">فاطمه حمدي مصطفى</div></div></div>
+                    <div class="name-card"><div class="number">57</div><div class="info"><div class="name">يمن أبو السعود الزواوي</div></div></div>
+                    <div class="name-card"><div class="number">58</div><div class="info"><div class="name">ايمان محمد اسماعيل السيد</div></div></div>
+                    <div class="name-card"><div class="number">59</div><div class="info"><div class="name">هدى محمد اسماعيل السيد</div></div></div>
+                    <div class="name-card"><div class="number">60</div><div class="info"><div class="name">منار عسران صادق عسران</div></div></div>
+                    <div class="name-card"><div class="number">61</div><div class="info"><div class="name">محمد عسران صادق عسران</div></div></div>
+                    <div class="name-card"><div class="number">62</div><div class="info"><div class="name">الطاهر عبد الفتاح أبو المجد</div></div></div>
+                    <div class="name-card"><div class="number">63</div><div class="info"><div class="name">احمد عبد الرحيم بدوي فايز</div></div></div>
+                    <div class="name-card"><div class="number">64</div><div class="info"><div class="name">أنس عاطف زين العابدين</div></div></div>
+                    <div class="name-card">
+                        <div class="number">65</div>
+                        <div class="info">
+                            <div class="name">دلال خيري عبدالرحمن</div>
+                            <div class="job"><i class="fas fa-user-md"></i> ممرضة بوزارة الصحة </div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">66</div><div class="info"><div class="name">دعاء عواد عبد المنعم</div></div></div>
+                    <div class="name-card">
+                        <div class="number">67</div>
+                        <div class="info">
+                            <div class="name">كريم صلاته عبد الحي</div>
+                            <div class="job"><i class="fas fa-pills"></i> طبيب صيدلي</div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">68</div><div class="info"><div class="name">حسين محمد أحمد حسين</div></div></div>
+                    <div class="name-card"><div class="number">69</div><div class="info"><div class="name">ولاء عبد الفتاح محمد</div></div></div>
+                    <div class="name-card"><div class="number">70</div><div class="info"><div class="name">عبد الرحمن عواد عبد المنعم</div></div></div>
+                    <div class="name-card"><div class="number">71</div><div class="info"><div class="name">مصطفى أدهم نور الدين</div></div></div>
+                    <div class="name-card"><div class="number">72</div><div class="info"><div class="name">عبد الله رمضان عبد الحميد</div></div></div>
+                </div>
+            </div>
+
+            <!-- التكملة -->
+            <div class="year-section fade-in">
+                <h2 class="year-title"><i class="fas fa-award"></i> دفعات 2019 حتى الآن</h2>
+                <div class="names-grid">
+                    <div class="name-card"><div class="number">73</div><div class="info"><div class="name">يوسف بيومي عبد اللطيف</div></div></div>
+                    <div class="name-card"><div class="number">74</div><div class="info"><div class="name">يوسف مطاوع عبد الراضي</div></div></div>
+                    <div class="name-card"><div class="number">75</div><div class="info"><div class="name">وفاء ممدوح محمد عبد الصمد</div></div></div>
+                    <div class="name-card"><div class="number">76</div><div class="info"><div class="name">ندى ممدوح محمد عبد الصمد</div></div></div>
+                    <div class="name-card">
+                        <div class="number">77</div>
+                        <div class="info">
+                            <div class="name">اسماء خيري عبد الرحمن</div>
+                            <div class="job"><i class="fas fa-user-md"></i> ممرضة بوزارة الصحة </div>
+                        </div>
+                    </div>
+                    <div class="name-card"><div class="number">78</div><div class="info"><div class="name">ملك علي محمد حسين</div></div></div>
+                    <div class="name-card"><div class="number">79</div><div class="info"><div class="name">حبيبه عاطف عطاي</div></div></div>
+                    <div class="name-card"><div class="number">80</div><div class="info"><div class="name">علي خلف الله عبد الشافي</div></div></div>
+                    <div class="name-card"><div class="number">81</div><div class="info"><div class="name">كنزي حسن اسماعيل</div></div></div>
+                    <div class="name-card"><div class="number">82</div><div class="info"><div class="name">لبني ياسر عبده فؤاد</div></div></div>
+                    <div class="name-card"><div class="number">83</div><div class="info"><div class="name">اسراء رشاد محمد الغريب</div></div></div>
+                    <div class="name-card"><div class="number">84</div><div class="info"><div class="name">اسماء رمضان عبد الحميد</div></div></div>
+                    <div class="name-card"><div class="number">85</div><div class="info"><div class="name">شيماء محسن عبد السلام</div></div></div>
+                    <div class="name-card"><div class="number">86</div><div class="info"><div class="name">ايمان علاء الظريق</div></div></div>
+                    <div class="name-card"><div class="number">87</div><div class="info"><div class="name">اسماء عبد الرحيم بدوي</div></div></div>
+                    <div class="name-card"><div class="number">88</div><div class="info"><div class="name">محمود محمد اسماعيل السيد</div></div></div>
+                    <div class="name-card"><div class="number">89</div><div class="info"><div class="name">محمد عبد الله اسماعيل السيد</div></div></div>
+                    <div class="name-card"><div class="number">90</div><div class="info"><div class="name">شهاب الدين خليفه علي السيد</div></div></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- الفوتر الموحد -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المدرسة</h3>
+                    <p>مدرسة ومكتب الفرقان لتحفيظ القرآن الكريم بقرية الشرقي سمهود، مركز أبوتشت، محافظة قنا.<br>تابعة للأزهر الشريف - جمهورية مصر العربية 🇪🇬<br>مرخصة تحت سجل رقم (٢٤٨) - كود (١٢٤٠١٠٠٧)</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100057508296846&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="overview.html">عن المدرسة</a></li>
+                        <li><a href="khatmeen.html">الخاتمين</a></li>
+                        <li><a href="teachers.html">المعلمون</a></li>
+                        <li><a href="competitions.html">المسابقات</a></li>
+                        <li><a href="khatmeen.html">الخاتمين</a></li>
+                        <li><a href="register.html">التسجيل</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>معلومات التواصل</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-left: 8px;"></i> الشرقي سمهود - أبوتشت - قنا</p>
+                    <p><i class="fas fa-phone" style="margin-left: 8px;"></i> +201006907567</p>
+                    <p><i class="fas fa-envelope" style="margin-left: 8px;"></i> abdullah.edu@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>مواعيد العمل</h3>
+                    <p><i class="far fa-clock" style="margin-left: 8px;"></i> الصباح: ٨ ص - ١٢ م</p>
+                    <p><i class="far fa-clock" style="margin-left: 8px;"></i> المساء: ٤ م - ٨ م</p>
+                    <p><i class="far fa-calendar-alt" style="margin-left: 8px;"></i> الجمعة: إجازة</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 © مدرسة الفرقان لتحفيظ القرآن الكريم. جميع الحقوق محفوظة.</p>
+                <p class="creator-signature">صنع بكل <i class="fas fa-heart"></i> ENG/Abdullah Mahmoud</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const fadeInOnScroll = function() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < window.innerHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        window.addEventListener('scroll', fadeInOnScroll);
+        fadeInOnScroll();
+    </script>
+</body>
+</html>

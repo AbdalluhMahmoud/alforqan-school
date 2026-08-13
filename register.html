@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل - مدرسة الفرقان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .register-page { padding: 5rem 0; background: linear-gradient(135deg, var(--primary-color), #1e6b3a); min-height: 100vh; display: flex; align-items: center; }
+        .register-wrapper { background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.2); max-width: 600px; margin: 0 auto; width: 100%; }
+        .register-wrapper h2 { text-align: center; color: var(--primary-color); margin-bottom: 2rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--dark-color); }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem; font-family: 'Amiri', serif; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); }
+        .submit-btn { width: 100%; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 15px; border: none; border-radius: 10px; font-size: 1.2rem; font-weight: bold; cursor: pointer; font-family: 'Reem Kufi', sans-serif; transition: 0.3s; }
+        .submit-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body style="padding-top: 80px; background-color: var(--light-color);">
+    <!-- الهيدر -->
+    <header id="header" class="scrolled">
+        <div class="container header-container">
+            <div class="logo"><i class="fas fa-mosque logo-icon"></i><h1>مدرسة <span>الفرقان</span></h1></div>
+            <button class="mobile-menu-btn" onclick="document.querySelector('nav ul').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="overview.html">لمحة من الواقع</a></li>
+                    <li><a href="teachers.html">المعلمون</a></li>
+                    <li><a href="competitions.html">مسابقات</a></li>
+                    <li><a href="khatmeen.html">الخاتمين</a></li>
+                    <li><a href="register.html">التسجيل</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="register-page">
+        <div class="container">
+            <div class="register-wrapper">
+                <h2>تسجيل طالب جديد</h2>
+                <form action="https://formspree.io/f/movkgolg" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="studentName">اسم الطالب الرباعي:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="studentAge">العمر:</label>
+                        <input type="number" id="studentAge" min="5" max="50" name="studentAge" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="parentName">اسم ولي الأمر:</label>
+                        <input type="text" id="parentName" name="parentName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم هاتف التواصل:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="program">البرنامج المطلوب:</label>
+                        <select id="program" name="program" required>
+                            <option value="">اختر البرنامج</option>
+                            <option value="hifz">تحفيظ القرآن الكريم</option>
+                            <option value="tajweed">علم التجويد</option>
+                            <option value="fiqh">الفقه والسيرة</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="previous">المستوى الحالي في الحفظ (اختياري):</label>
+                        <textarea id="previous" name="previous" rows="3" placeholder="اذكر ما تم حفظه سابقاً من القرآن الكريم..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">إرسال طلب التسجيل</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+\<!-- الفوتر الموحد -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- العمود الأول: عن المدرسة -->
+                <div class="footer-section">
+                    <h3>عن المدرسة</h3>
+                    <p>مدرسة ومكتب الفرقان لتحفيظ القرآن الكريم بقرية الشرقي سمهود، مركز أبوتشت، محافظة قنا.<br>تابعة للأزهر الشريف - جمهورية مصر العربية 🇪🇬<br>مرخصة تحت سجل رقم (٢٤٨) - كود (١٢٤٠١٠٠٧)</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100057508296846&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني: روابط سريعة -->
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="overview.html">عن المدرسة</a></li>
+                        <li><a href="programs.html">البرامج</a></li>
+                        <li><a href="teachers.html">المعلمون</a></li>
+                        <li><a href="competitions.html">المسابقات</a></li>
+                        <li><a href="khatmeen.html">الخاتمين</a></li>
+                        <li><a href="register.html">التسجيل</a></li>
+                    </ul>
+                </div>
+
+                <!-- العمود الثالث: معلومات التواصل -->
+                <div class="footer-section">
+                    <h3>معلومات التواصل</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-left: 8px;"></i> الشرقي سمهود - أبوتشت - قنا</p>
+                    <p><i class="fas fa-phone" style="margin-left: 8px;"></i> +201006907567</p>
+                    <p><i class="fas fa-envelope" style="margin-left: 8px;"></i> abdullah.edu@gmail.com</p>
+                </div>
+
+                <!-- العمود الرابع: مواعيد العمل -->
+                <div class="footer-section">
+                    <h3>مواعيد العمل</h3>
+                    <p><i class="far fa-clock" style="margin-left: 8px;"></i> الصباح: ٨ ص - ١٢ م</p>
+                    <p><i class="far fa-clock" style="margin-left: 8px;"></i> المساء: ٤ م - ٨ م</p>
+                    <p><i class="far fa-calendar-alt" style="margin-left: 8px;"></i> الجمعة: إجازة</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 © مدرسة الفرقان لتحفيظ القرآن الكريم. جميع الحقوق محفوظة.</p>
+                <p class="creator-signature">صنع بكل <i class="fas fa-heart"></i> ENG/Abdullah Mahmoud</p>
+            </div>
+        </div>
+    </footer>
+</html>

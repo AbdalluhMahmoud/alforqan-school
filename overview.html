@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لمحة من الواقع - مدرسة الفرقان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .overview { padding: 4rem 0; }
+        .official-badge { text-align: center; background: white; padding: 1.5rem; border-radius: 10px; box-shadow: var(--shadow); margin-bottom: 3rem; border-bottom: 3px solid var(--primary-color); }
+        .official-badge h3 { color: var(--dark-color); margin-bottom: 5px; }
+        .official-badge p { color: var(--primary-color); font-weight: bold; font-size: 1.2rem; margin: 0; }
+        .detail-card { background: white; padding: 2rem; border-radius: 15px; box-shadow: var(--shadow); border-right: 5px solid var(--primary-color); margin-bottom: 2rem;}
+        .detail-card h3 { color: var(--primary-color); border-bottom: 2px dashed #eee; padding-bottom: 10px; margin-bottom: 15px; }
+        .detail-card ul { list-style: none; padding: 0; }
+        .detail-card ul li { position: relative; padding-right: 25px; margin-bottom: 15px; line-height: 1.6; }
+        .detail-card ul li::before { content: '\f0da'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; right: 0; top: 2px; color: var(--secondary-color); }
+        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 3rem; background: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .overview-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+        .overview-gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow); transition: transform 0.3s; }
+        .overview-gallery img:hover { transform: scale(1.05); }
+        @media (max-width: 768px) { .overview-gallery { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+<body style="padding-top: 80px;">
+    <!-- الهيدر -->
+    <header id="header" class="scrolled">
+        <div class="container header-container">
+            <div class="logo"><i class="fas fa-mosque logo-icon"></i><h1>مدرسة <span>الفرقان</span></h1></div>
+            <button class="mobile-menu-btn" onclick="document.querySelector('nav ul').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="overview.html">لمحة من الواقع</a></li>
+                    <li><a href="teachers.html">المعلمون</a></li>
+                    <li><a href="competitions.html">مسابقات</a></li>
+                    <li><a href="khatmeen.html">الخاتمين</a></li>
+                    <li><a href="register.html">التسجيل</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section overview">
+        <div class="container">
+            <div class="section-title"><h2>لمحة تفصيلية من أرض الواقع</h2></div>
+            
+            <div class="official-badge">
+                <h3>مدرسة القرآن الكريم بقرية الشرقي سمهود - مركز أبوتشت - قنا</h3>
+                <p>تحت إشراف الأزهر الشريف | بسجل رقم (248) لسنة 2012م | كود رقم (12401007)</p>
+            </div>
+
+            <div class="overview-details">
+                <div class="detail-card">
+                    <h3><i class="fas fa-users"></i> الكوادر والدارسين</h3>
+                    <ul>
+                        <li><strong>القائم على المكتب:</strong> الشيخ عبدالرحمن إسماعيل السيد أحمد.</li>
+                        <li><strong>الكادر التعليمي:</strong> 9 محفظين مساعدين بالأجر.</li>
+                        <li><strong>الطلاب:</strong> يتراوح بين 700 إلى 800 طالب وطالبة (من سن 5 إلى 20 سنة)، خصوصاً في فصل الصيف.</li>
+                        <li><strong>الرسوم:</strong> 10 جنيهات أسبوعياً أو 40 جنيهاً شهرياً للمقتدرين فقط.</li>
+                        <li><strong>الإعفاءات:</strong> الأيتام والفقراء والمحتاجين معفيين تماماً من دفع الرسوم.</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3><i class="fas fa-building"></i> المكان والإمكانيات المتاحة</h3>
+                    <ul>
+                        <li><strong>الموقع:</strong> مضيفة عامة تمتلكها إحدى العائلات بالقرية.</li>
+                        <li><strong>المرافق:</strong> قاعة على شكل حرف (L) مكشوفة الجوانب، حمام واحد، وحوض غسيل واحد.</li>
+                        <li><strong>الفناء:</strong> فناء صغير حوالي 100 متر يغطي نصفه ألواح حديدية.</li>
+                        <li><strong>المصاحف:</strong> توزع المصاحف والأجزاء مجاناً على جميع الطلبة دون استثناء.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <h3><i class="fas fa-book-open"></i> المواد التي تدرس</h3>
+                <p>القرآن الكريم - السنة النبوية المشرفة - السيرة النبوية - التفسير المبسط - التجويد والمتون - كتب الأخلاق والآداب العامة.</p>
+            </div>
+
+            <!-- معرض الفيديو والصور (من أرض الواقع) -->
+            <div class="section-title" style="margin-top: 4rem;"><h2>توثيق مرئي للمكتب</h2></div>
+            
+            <!-- قسم الفيديو الاحترافي -->
+    <section class="premium-video-section">
+        <div class="container">
+            <div class="video-text fade-in">
+                <h2>نظرة عن قرب لواقعنا</h2>
+                <p>شاهد هذا المقطع القصير للتعرف على حجم الإقبال الكبير والتحديات المكانية التي نمر بها لتخريج جيل حافظ لكتاب الله.</p>
+            </div>
+            
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/3dRqKWa9shQ" title="فيديو مدرسة القرآن الكريم" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 15px; box-shadow: var(--shadow); width: 100%; height: 100%;"></iframe>
+</div>
+                    
+    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <div class="overview-gallery">
+                <img src="photo/num_1.jpg" alt="صورة من الواقع 1">
+                <img src="photo/معاناة 2.jpg" alt="صورة من الواقع 2">
+                <img src="photo/معاناة 3.jpg" alt="صورة من الواقع 3">
+                <img src="photo/معاناة_4.jpeg" alt="صورة من الواقع 4">
+                <img src="photo/معاناة _5.jpeg" alt="صورة من الواقع 5">
+                <img src="photo/معاناة 6.jpg" alt="صورة من الواقع 6">
+                <img src="photo/معاناة 7.jpeg" alt="صورة من الواقع 7">
+                <img src="photo/معاناه8 .jpeg" alt="صورة من الواقع 8">
+                <img src="photo/معاناة9.jpeg" alt="صورة من الواقع 9">
+            </div>
+        </div>
+    </section>
+</body>
+<!-- الفوتر الموحد -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- العمود الأول: عن المدرسة -->
+                <div class="footer-section">
+                    <h3>عن المدرسة</h3>
+                    <p>مدرسة ومكتب الفرقان لتحفيظ القرآن الكريم بقرية الشرقي سمهود، مركز أبوتشت، محافظة قنا.<br>تابعة للأزهر الشريف - جمهورية مصر العربية 🇪🇬<br>مرخصة تحت سجل رقم (٢٤٨) - كود (١٢٤٠١٠٠٧)</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100057508296846&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني: روابط سريعة -->
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="overview.html">عن المدرسة</a></li>
+                        <li><a href="programs.html">البرامج</a></li>
+                        <li><a href="teachers.html">المعلمون</a></li>
+                        <li><a href="competitions.html">المسابقات</a></li>
+                        <li><a href="khatmeen.html">الخاتمين</a></li>
+                        <li><a href="register.html">التسجيل</a></li>
+                    </ul>
+                </div>
+
+                <!-- العمود الثالث: معلومات التواصل -->
+                <div class="footer-section">
+                    <h3>معلومات التواصل</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-left: 8px;"></i> الشرقي سمهود - أبوتشت - قنا</p>
+                    <p><i class="fas fa-phone" style="margin-left: 8px;"></i> +201006907567</p>
+                    <p><i class="fas fa-envelope" style="margin-left: 8px;"></i> abdullah.edu@gmail.com</p>
+                </div>
+
+                <!-- العمود الرابع: مواعيد العمل -->
+                <div class="footer-section">
+                    <h3>مواعيد العمل</h3>
+                    <p><i class="far fa-clock" style="margin-left: 8px;"></i> الصباح: ٨ ص - ١٢ م</p>
+                    <p><i class="far fa-clock" style="margin-left: 8px;"></i> المساء: ٤ م - ٨ م</p>
+                    <p><i class="far fa-calendar-alt" style="margin-left: 8px;"></i> الجمعة: إجازة</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2026 © مدرسة الفرقان لتحفيظ القرآن الكريم. جميع الحقوق محفوظة.</p>
+                <p class="creator-signature">صنع بكل <i class="fas fa-heart"></i> ENG/Abdullah Mahmoud</p>
+            </div>
+        </div>
+    </footer>
+</html>
